@@ -68,7 +68,7 @@ def init_session_state():
     """Initialize Streamlit session state"""
     if 'initialized' not in st.session_state:
         st.session_state.initialized = True
-        st.session_state.config = get_config("stock-news-sentinel/config.properties")
+        st.session_state.config = get_config("newsentinel/config.properties")
         st.session_state.logger = setup_logger(
             log_file=st.session_state.config.log_file,
             log_level=st.session_state.config.log_level,
